@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "example"
+version = "0.1.0"
+description = "This is an example!"
+authors = ["juke2 <126202832+juke2@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+simplejson = "^3.19.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
