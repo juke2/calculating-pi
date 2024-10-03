@@ -2,8 +2,9 @@ import subprocess
 from pathlib import Path
 import sys
 
-ROOT_DIRECTORY = Path(__file__).parent.resolve()
-RUNNER_PATH = ROOT_DIRECTORY.joinpath("runner.ps1")
+# ROOT_DIRECTORY = Path(__file__).parent.resolve()
+# RUNNER_PATH = ROOT_DIRECTORY.joinpath("runner.ps1")
+
 subprocess.run("poetry run python src/pi.py", stdout=sys.stdout, shell=True)
 subprocess.run("java ./src/pi.java 100", stdout=sys.stdout, shell=True)
 subprocess.run("lua src/pi.lua", stdout=sys.stdout, shell=True)

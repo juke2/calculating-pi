@@ -33,7 +33,7 @@
   ruby
   octaveFull
   typescript
-  julia
+  julia-bin
   ];
 
 
