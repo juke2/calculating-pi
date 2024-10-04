@@ -11,7 +11,7 @@ function main()
     end_time = time_ns()
     avg_time_diff = (end_time - start_time)/iterations_for_avg
     value_of_pi = calculate_pi_from_riemann_zeta_function(iterations)
-    @printf("Value of pi calculated with the Riemann-Zeta function: %f\nAvg. time taken (in nanoseconds): %f\nNumber of iterations: %f",value_of_pi,avg_time_diff,iterations)
+    @printf("Value of pi calculated with the Riemann-Zeta function: %f\nAvg. time taken (in nanoseconds): %f\nNumber of iterations: %f\n",value_of_pi,avg_time_diff,iterations)
     
 
 

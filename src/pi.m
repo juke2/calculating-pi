@@ -26,7 +26,7 @@ function main ()
     endfor
     time_taken = etime(clock(), start_time)/iterations_for_avg;
     result = calculate_pi_with_riemann_zeta_function_with_multiplier(iterations);
-    printf("Value of pi calculated with a version of the riemann zeta function: %f\nAvg. time taken (in seconds): %f\nIterations: %f",result,time_taken,iterations)
+    printf("Value of pi calculated with a version of the riemann zeta function: %f\nAvg. time taken (in seconds): %f\nNumber of iterations: %d\n",result,time_taken,iterations)
     
 endfunction
 

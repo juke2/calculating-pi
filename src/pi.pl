@@ -17,7 +17,7 @@ sub main{
     my $time_elapsed_in_ms = $time_elapsed * 1000;
     my $result = calculate_pi_newtons_formula($iteration_count);
     print(sprintf(
-        "Value of pi calculated with newton's formula: %f\nAvg. Time Taken (in milliseconds): %f\nNumber of iterations: %d",
+        "Value of pi calculated with newton's formula: %f\nAvg. Time Taken (in milliseconds): %f\nNumber of iterations: %d\n",
         $result, $time_elapsed_in_ms,$iteration_count
     ));
 }
