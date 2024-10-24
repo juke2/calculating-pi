@@ -19,7 +19,7 @@ def main() -> None:
     average_time_ms = int(average_time_seconds * 1000)
     average_time_ns = int(average_time_seconds * 1000000000)
     print(
-        f"Value of pi calcualted with the Nilakantha Series: {output}.\nAvg. Time of execution (in nanoseconds): {average_time_ns}.\nAvg. Time of execution (in milliseconds): {average_time_ms}.\nNumber of Iterations: {ITERATIONS}."
+        f"Value of pi calcualted with the Nilakantha Series: {output}.\nAverage Time of execution (in nanoseconds): {average_time_ns}.\nAverage Time of execution (in milliseconds): {average_time_ms}.\nNumber of Iterations: {ITERATIONS}."
     )
 
 

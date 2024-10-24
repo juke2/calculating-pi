@@ -10,7 +10,7 @@ To build the dependencies for this repository locally, run the following command
 sudo nixos-rebuild switch -I nixos-config=configuration.nix
 ```
 
-Then, to install python dependencies, run the following command in the java-rush directory:
+Then, to install python dependencies, run the following command in the calculating-pi directory:
 
 ```
 poetry install

@@ -13,7 +13,7 @@ function main() {
   console.log(
     `Value of pi calculated with the wallis product: ${calculate_pi_with_wallis_product(
       iteration_count
-    )}\nAvg. Time Taken (in milliseconds): ${avg_time_taken_in_ms}\nNumber of iterations: ${iteration_count}`
+    )}\nAverage Time Taken (in milliseconds): ${avg_time_taken_in_ms}\nNumber of iterations: ${iteration_count}`
   );
 }
 

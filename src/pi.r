@@ -10,7 +10,7 @@ main <- function(){
     time.taken <- (end.time - start.time)/num.iterations.for.avg
     time.taken.ms <- as.numeric(time.taken)*1000
     result <- calc.pi.unnamed.inverse.square(num.iterations)
-    output <- sprintf("Value of pi calculated with inverse square formula: %f\nAvg. Time Taken (in milliseconds): %f4\nNumber of iterations: %s\n",result,time.taken.ms,num.iterations )
+    output <- sprintf("Value of pi calculated with inverse square formula: %f\nAverage Time Taken (in milliseconds): %f4\nNumber of iterations: %s\n",result,time.taken.ms,num.iterations )
     cat(output)
     
 }

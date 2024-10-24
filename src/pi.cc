@@ -37,6 +37,6 @@ int main()
     auto avg_time_taken = time_taken / iterations_for_avg;
     cout << "Hello World, From C++!\n";
     long double pi_val = calculate_pi_from_perimiter_recursion(100);
-    printf("Value of pi calculated using recursive perimiters: %0.30Lf\nAvg. Time Taken (in nanoseconds): %i\nNumber of iterations: %i\n", pi_val, avg_time_taken, iterations);
+    printf("Value of pi calculated using recursive perimiters: %0.30Lf\nAverage Time Taken (in nanoseconds): %i\nNumber of iterations: %i\n", pi_val, avg_time_taken, iterations);
     return 0;
 }

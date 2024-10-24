@@ -10,7 +10,7 @@ fn main() -> () {
         total_duration += start.elapsed();
     } 
     let time_ns = total_duration.as_nanos()/iterations_for_avg;
-    println!("Value of pi calculated with the Newton/Euler convergence: {} \nAvg Time Taken (nanoseconds): {} \nNumber of Iterations: {}",calculate_pi_newton_euler_convergence(50), time_ns, iterations);
+    println!("Value of pi calculated with the Newton/Euler convergence: {} \nAverage Time Taken (nanoseconds): {} \nNumber of Iterations: {}",calculate_pi_newton_euler_convergence(50), time_ns, iterations);
 }
 
 fn calculate_pi_newton_euler_convergence(iterations: u32) -> f64 {
@@ -19,6 +19,7 @@ fn calculate_pi_newton_euler_convergence(iterations: u32) -> f64 {
         // println!("{}",((2_f64).powf(n.into()) * factorial(n) * factorial(n))/factorial(2*n + 1));
         sum += ((2_f64).powf(n.into()) * factorial(n) * factorial(n))/factorial(2*n + 1);
     } // maybe simplify this later by combining factorial series to allow for more iterations
+    // can't simplify easily (would require doing more floating point operations so I think it would actually increase execution time)
     return sum*2_f64;
 
 }

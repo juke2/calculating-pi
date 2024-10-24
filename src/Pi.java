@@ -34,12 +34,12 @@ public class Pi {
         long avg_time_recursive = time_sum_recursive / NUM_RUNS_FOR_AVERAGES;
         System.out.println(
                 String.format(
-                        "Value of pi calcualted iteratively with the Gauss-Legendre algorithm: %s.\nAvg. Time of execution (in nanoseconds): %d.\nAvg. Time of execution (in milliseconds): %d.\nNumber of Iterations: %d.",
+                        "Value of pi calcualted iteratively with the Gauss-Legendre algorithm: %s.\nAverage Time of execution (in nanoseconds): %d.\nAverage Time of execution (in milliseconds): %d.\nNumber of Iterations: %d.",
                         iterative_pi.toPlainString(), avg_time_iterative, avg_time_iterative / 1000000,
                         num_iterations));
         System.out.println(
                 String.format(
-                        "Value of pi calcualted recursively with the Gauss-Legendre algorithm: %s.\nAvg. Time of execution (in nanoseconds): %d.\nAvg. Time of execution (in milliseconds): %d.\nNumber of Iterations: %d.",
+                        "Value of pi calcualted recursively with the Gauss-Legendre algorithm: %s.\nAverage Time of execution (in nanoseconds): %d.\nAverage Time of execution (in milliseconds): %d.\nNumber of Iterations: %d.",
                         recursive_pi.toPlainString(), avg_time_recursive, avg_time_recursive / 1000000,
                         num_iterations));
         output_to_text(iterative_pi, recursive_pi, avg_time_iterative, avg_time_recursive, num_iterations);
@@ -106,17 +106,17 @@ public class Pi {
         return gauss_legendre_recursive_helper(a, b, t, p, num_iterations - 1, math_context);
     }
 
-    private static void output_to_text(BigDecimal iterative_pi, BigDecimal recursive_pi, long avg_time_iterative, long avg_time_recursive, int num_iterations ){
-        try{
+    private static void output_to_text(BigDecimal iterative_pi, BigDecimal recursive_pi, long avg_time_iterative,
+            long avg_time_recursive, int num_iterations) {
+        try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(OUTPUT_DIR));
             writer.write("iterative_pi : " + iterative_pi.toPlainString() + "\n");
             writer.write("recursive_pi : " + recursive_pi.toPlainString() + "\n");
-            writer.write("avg_time_iterative : " + avg_time_iterative+ "\n");
+            writer.write("avg_time_iterative : " + avg_time_iterative + "\n");
             writer.write("avg_time_recursive : " + avg_time_recursive + "\n");
             writer.write("num_iterations : " + num_iterations + "\n");
             writer.close();
-        }
-        catch(IOException e){
+        } catch (IOException e) {
             System.out.println("Writing to file failed. See stack trace for more detail.");
             e.printStackTrace();
         }
